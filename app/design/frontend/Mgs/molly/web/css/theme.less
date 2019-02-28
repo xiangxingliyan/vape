@@ -3542,8 +3542,8 @@ body:not(.cms-index-index) {
 // Footer 
 .footer {
     padding: 0;
-    background-color: #222;
-    color:#aaa;
+    background-color: #ededed;
+    color:#000000;
     float: left;
     width: 100%;
     .top-footer{
@@ -3684,25 +3684,14 @@ body:not(.cms-index-index) {
         padding-top:60px;
         padding-bottom:60px;
         .block-title{
-            margin-bottom: 32px;
+            margin-bottom: 10px;
             overflow: hidden;
             .title{
-                color: #f7f7f7;
+                color: #000;
                 font-weight: 700;
                 margin:0;
                 position:relative;
                 text-transform:uppercase;
-                &:after{
-                    background-color:#444;
-                    content:"";
-                    height:1px;
-                    left: 100%;
-                    margin-left: 15px;
-                    position: absolute;
-                    top:10px;
-                    width: 800px;
-
-                }
             }
         }
         .footer-contacts {
@@ -3725,12 +3714,11 @@ body:not(.cms-index-index) {
         }
         .info-footer {
             a{
-                color:#aaa;
+                color:#000;
                 display: block;
                 padding:5px 0;
                 &:hover{
-                    color:#fff;
-                    font-weight: 700;
+                    color:#bd1111;
                 }
             }
         }
@@ -3747,6 +3735,31 @@ body:not(.cms-index-index) {
                 }
             }
         }
+        .newsletter-footer{
+            margin-top: 10px;
+            .input-text{
+                height: 35px;
+                background-color: transparent;
+                border-color: #c5c5c5;
+            }
+            .newsletter{
+                width: 65%;
+                float: left;
+            }
+            .actions{
+                width: 35%;
+                float: left;
+                padding-left: 2%;
+                .btn{
+                    padding: 6px 6px;
+                    border:1px solid #000;
+                    background: transparent;
+                    color: #000;
+                }
+
+            }
+
+        }
     }
     .bottom-footer{
         text-align: center;
@@ -3756,6 +3769,11 @@ body:not(.cms-index-index) {
             line-height: 1;
             margin-top: 23px;
         }
+        .bottom-footer-desc{
+            margin-bottom: 60px;
+            text-align: left;
+        }
+
     }
 }
 
