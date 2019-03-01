@@ -14,9 +14,9 @@
 			</div>
 			<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 top-bar-right pull-right">
 				<div class="header-account">
-					<?php include ($block->getTemplateFile('Magento_Newsletter::header-subscribe.phtml')) ?>
 					<?php echo $block->getChildHtml('store_language') ?>
 					<?php echo $block->getChildHtml('currency') ?>
+                    <?php echo $block->getChildHtml('minicart') ?>
 					<div class="switcher top-links" id="top-links">
 						<span class="name" data-mage-init='{"dropdown":{}}' data-toggle="dropdown">
 								<span><span class="hidden-sm hidden-xs"><?php echo __('My Account')?></span><i class="fa fa-user hidden-lg hidden-md"></i><i class="fa fa-angle-down"></i></span>		
@@ -32,7 +32,7 @@
 							<?php echo $block->getChildHtml('top.links') ?>
 						</ul>
 					</div>
-					<?php echo $block->getChildHtml('minicart') ?>
+
 					<?php echo $block->getChildHtml('topSearch') ?>
 				</div>
 			</div>
